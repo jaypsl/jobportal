@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>JOB SEARCH</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        
+    </head>
+
+
+    <body ng-app="myapp">
+        <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div>
+                                <a href="#/login" class="btn btn-default">Login</a> 
+                                <!-- <a href="#/home" class="btn btn-default">Home</a> -->
+                                <a href="#/registration" ng-click="signup()" class="btn btn-default">SignUp</a>
+                            </div>
+                        </nav>
+                <div ng-view=""></div>
+                      
+        </div>
+
+       
+        <script src="http://localhost:3000/js/angular.min.js"></script>
+        
+        <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+        <script src="http://localhost:3000/js/angular-cookie.js"></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>

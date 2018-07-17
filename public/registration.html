@@ -1,0 +1,54 @@
+<h1></h1>
+
+<form>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationServer01">Username</label>
+            <input type="text" name="username" ng-model="regform.username" class="form-control" id="validationServer01" placeholder="Username" required>
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="validationServer02">Password</label>
+            <input type="text" name="password" ng-model="regform.password" class="form-control" id="validationServer02" placeholder="Password" required>
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="validationServerUsername">Email</label>
+            <div class="input-group">
+              <input type="text" name="email" ng-model="regform.email" class="form-control" id="validationServerUsername" placeholder="Email" aria-describedby="inputGroupPrepend3" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationServer03">Location</label>
+            <input type="text" name="location" ng-model="regform.location" class="form-control" id="validationServer03" placeholder="City" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+                <div class="col-md-12 mb-3">
+                  <label for="validationServer03">Phone number</label>
+                  <input type="text" name="phone" ng-model="regform.phone" class="form-control" id="validationServer03" placeholder="Phone number" required>
+                </div>
+        </div>
+
+        <!-- <div ng-controller="DropDownController">
+        <div class="dropdown">
+            <button ng-click="type()" class="btn btn-primary" type="button" data-toggle="dropdown">Type</button>
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li ng-repeat="a in type1"><a href="#">{{a}}</a></li>
+            </ul>
+          </div>
+        </div> -->
+        <div class="form-group">
+          Category
+            <select ng-model="regform.selectCategory" class="form-control" required>
+                <option ng-repeat="x in category">{{x}}</option>
+            </select>
+        </div>
+
+<br><br>
+        <div>
+        <button class="btn btn-dark" ng-click="register(regform)" type="submit">Registration</button>
+      </div>
+</form>

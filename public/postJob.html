@@ -1,0 +1,33 @@
+<h1>Post Jobs</h1>
+
+<form>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationServer01">Job Title</label>
+            <input type="text" class="form-control" name="jobtitle" ng-model="pjf.jobtitle" id="validationServer01" placeholder="Job Title" required>
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="validationServer02">Job Description</label>
+            <input type="text" class="form-control" name="jobdesc" ng-model="pjf.jobdesc" id="validationServer02" placeholder="Job Description" required>
+          </div>
+          <div class="col-md-12 mb-3">
+            <label for="validationServerUsername">Keywords</label>
+            <div class="input-group">
+              <input type="text" class="form-control" name="keyword" ng-model="pjf.keyword" id="validationServerUsername" placeholder="Keywords" aria-describedby="inputGroupPrepend3" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationServer03">Location</label>
+            <input type="text" class="form-control" name="location" ng-model="pjf.location" id="validationServer03" placeholder="City" required>
+          </div>
+
+
+        </div>
+        <div>
+        <button class="btn btn-dark" ng-click="postJob1()" type="submit">Save Jobs</button>
+        <button class="btn btn-dark" ng-click="reset(pjf)" type="submit">Reset</button>
+        <button class="btn btn-dark" ng-click="GoBack()" type="submit">Go Back</button>
+      </div>
+      </form>
